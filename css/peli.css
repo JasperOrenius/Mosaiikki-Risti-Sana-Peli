@@ -1,0 +1,24 @@
+.cell {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+input[type="text"] {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+.correct {
+    background-color: lightgreen;
+}
+.incorrect {
+    background-color: lightcoral;
+}
