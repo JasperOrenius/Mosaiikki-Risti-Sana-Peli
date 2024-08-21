@@ -1,3 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#game {
+    width: 700px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10px;
+    background-color: #ccc0b4;
+    border: 12px solid #ccc0b4;
+    border-radius: 8px;
+}
+#top-container {
+    width: inherit;
+    height: 60px;
+    background-color: #ccc0b4;
+}
+#game-container {
+    flex-grow: 1;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
 .cell {
     width: 25px;
     height: 25px;
