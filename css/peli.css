@@ -56,3 +56,28 @@ input[type="text"] {
 .incorrect {
     background-color: lightcoral;
 }
+#alphabet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.alphabet {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.alphabet:hover {
+    background-color: #ccc;
+}
+.selected-character {
+    background-color: #aaa;
+    border: 2px solid #555;
+    color: white;
+}
