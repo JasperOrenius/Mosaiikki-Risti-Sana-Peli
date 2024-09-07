@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#game {
+    width: 700px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 5px;
+    background-color: #ccc0b4;
+    border: 12px solid #ccc0b4;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#game-container {
+    flex-grow: 1;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.cell {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    font-family: Arial;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.cell-item {
+    position: relative;
+    display: inline-block;
+}
+.cell-number {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+}
+.number-above {
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.number-left {
+    top: 50%;
+    right: 31px;
+    transform: translateY(-50%);
+}
+.clue-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    flex: 1 0 18%;
+}
+.clue-number {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+#clues-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.clue-image {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    object-fit: cover;
+}
+input[type="text"] {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 0;
+    margin: 0;
+}
+.correct {
+    background-color: lightgreen;
+}
+.incorrect {
+    background-color: lightcoral;
+}
+#alphabet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.alphabet {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.alphabet:hover {
+    background-color: #ccc;
+}
+.selected-character {
+    background-color: #aaa;
+    border: 2px solid #555;
+    color: white;
+}

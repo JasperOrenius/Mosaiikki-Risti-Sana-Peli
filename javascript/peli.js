@@ -1,10 +1,10 @@
 const level1 = [
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'J'}],
-    [{}, {letter: 'P', clues: {above: 1}}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {}, {letter: 'H'}, {}, {letter: 'Ä'}],
-    [{}, {letter: 'O'}, {}, {}, {letter: 'K'}, {letter: 'E'}, {letter: 'T'}, {letter: 'T'}, {letter: 'U'}, {}, {letter: 'I'}, {}, {letter: 'N'}],
-    [{letter: 'O'}, {letter: 'R'}, {letter: 'A'}, {letter: 'V'}, {letter: 'A'}, {}, {}, {}, {letter: 'S'}, {}, {letter: 'R'}, {}, {letter: 'I'}],
-    [{}, {letter: 'O'}, {}, {}, {letter: 'R'}, {}, {letter: 'M'}, {}, {letter: 'I'}, {letter: 'L'}, {letter: 'V'}, {letter: 'E'}, {letter: 'S'}],
-    [{}, {}, {}, {letter: 'A'}, {letter: 'H'}, {letter: 'M'}, {letter: 'A'}, {}, {}, {}, {letter: 'I'}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'J', clues : {above: 4}}],
+    [{}, {letter: 'P', clues: {above: 9}}, {}, {}, {}, {}, {}, {}, {letter: 'S', clues: {above: 10}}, {}, {letter: 'H', clues: {above: 2}}, {}, {letter: 'Ä'}],
+    [{}, {letter: 'O'}, {}, {}, {letter: 'K', clues: {above: 5, left: 6}}, {letter: 'E'}, {letter: 'T'}, {letter: 'T'}, {letter: 'U'}, {}, {letter: 'I'}, {}, {letter: 'N'}],
+    [{letter: 'O', clues: {left: 8}}, {letter: 'R'}, {letter: 'A'}, {letter: 'V'}, {letter: 'A'}, {}, {}, {}, {letter: 'S'}, {}, {letter: 'R'}, {}, {letter: 'I'}],
+    [{}, {letter: 'O'}, {}, {}, {letter: 'R'}, {}, {letter: 'M', clues: {above: 7}}, {}, {letter: 'I', clues: {left: 3}}, {letter: 'L'}, {letter: 'V'}, {letter: 'E'}, {letter: 'S'}],
+    [{}, {}, {}, {letter: 'A', clues: {left: 1}}, {letter: 'H'}, {letter: 'M'}, {letter: 'A'}, {}, {}, {}, {letter: 'I'}, {}, {}],
     [{}, {}, {}, {}, {letter: 'U'}, {}, {letter: 'J'}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {letter: 'V'}, {}, {}, {}, {}, {}, {}],
@@ -12,32 +12,32 @@ const level1 = [
 ];
 
 const level2 = [
-    [{}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {letter: 'K', clues : {above: 6}}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {letter: 'H'}, {letter: 'A'}, {letter: 'R'}, {letter: 'A'}, {letter: 'K'}, {letter: 'K'}, {letter: 'A'}, {}, {}, {}, {letter: 'J'}, {}, {}, {}, {}, {}],
+    [{}, {}, {letter: 'H', clues : {left: 1}}, {letter: 'A'}, {letter: 'R'}, {letter: 'A'}, {letter: 'K'}, {letter: 'K'}, {letter: 'A'}, {}, {}, {}, {letter: 'J', clues : {above: 3}}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'L'}, {letter: 'E'}, {letter: 'H'}, {letter: 'T'}, {letter: 'O'}, {letter: 'K'}, {letter: 'U'}, {letter: 'R'}, {letter: 'P'}, {letter: 'P'}, {letter: 'A'}, {}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'L', clues : {left: 7}}, {letter: 'E'}, {letter: 'H'}, {letter: 'T'}, {letter: 'O'}, {letter: 'K'}, {letter: 'U'}, {letter: 'R'}, {letter: 'P'}, {letter: 'P'}, {letter: 'A'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {letter: 'K'}, {letter: 'U'}, {letter: 'R'}, {letter: 'K'}, {letter: 'I'}, {}, {letter: 'P'}, {letter: 'Ä'}, {letter: 'Ä'}, {letter: 'S'}, {letter: 'K'}, {letter: 'Y'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}],
+    [{}, {}, {}, {letter: 'K', clues : {left: 5}}, {letter: 'U'}, {letter: 'R'}, {letter: 'K', clues : {above: 4}}, {letter: 'I'}, {}, {letter: 'P', clues : {left: 9}}, {letter: 'Ä'}, {letter: 'Ä'}, {letter: 'S'}, {letter: 'K'}, {letter: 'Y'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}],
     [{}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {}, {}],
-    [{}, {}, {letter: 'H'}, {letter: 'Ö'}, {letter: 'M'}, {letter: 'Ö'}, {letter: 'T'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}],
+    [{}, {}, {letter: 'H', clues : {left: 2}}, {letter: 'Ö'}, {letter: 'M', clues : {above: 8}}, {letter: 'Ö'}, {letter: 'T'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {letter: 'E'}, {}, {letter: 'K'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{letter: 'T'}, {letter: 'A'}, {letter: 'L'}, {letter: 'I'}, {letter: 'T'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}],
+    [{letter: 'T', clues : {left: 10}}, {letter: 'A'}, {letter: 'L'}, {letter: 'I'}, {letter: 'T'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
 ];
 
 const level3 = [
-    [{}, {letter: 'S'}, {}, {}, {}, {}, {letter: 'M'}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {letter: 'S', clues : {above: 8}}, {}, {}, {}, {}, {letter: 'M', clues : {above: 7}}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {letter: 'Ä'}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {letter: 'R'}, {}, {}, {}, {}, {letter: 'I'}, {}, {letter: 'L'}, {}, {}, {}, {}, {}, {}],
-    [{}, {letter: 'K'}, {}, {}, {letter: 'L'}, {}, {letter: 'K'}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}],
-    [{letter: 'S'}, {letter: 'I'}, {letter: 'I'}, {letter: 'K'}, {letter: 'A'}, {}, {letter: 'K'}, {}, {letter: 'H'}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {letter: 'H'}, {letter: 'A'}, {letter: 'U'}, {letter: 'K'}, {letter: 'I'}, {}, {letter: 'M'}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {letter: 'N'}, {}, {}, {letter: 'U'}, {}, {}, {letter: 'A'}, {letter: 'H'}, {letter: 'V'}, {letter: 'E'}, {letter: 'N'}],
+    [{}, {letter: 'R'}, {}, {}, {}, {}, {letter: 'I'}, {}, {letter: 'L', clues : {above: 5}}, {}, {}, {}, {}, {}, {}],
+    [{}, {letter: 'K'}, {}, {}, {letter: 'L', clues : {above: 4}}, {}, {letter: 'K'}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}],
+    [{letter: 'S', clues : {left: 9}}, {letter: 'I'}, {letter: 'I'}, {letter: 'K'}, {letter: 'A'}, {}, {letter: 'K'}, {}, {letter: 'H'}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {letter: 'H', clues : {left: 2}}, {letter: 'A'}, {letter: 'U'}, {letter: 'K', clues : {above: 3}}, {letter: 'I'}, {}, {letter: 'M', clues : {above: 6}}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {letter: 'N'}, {}, {}, {letter: 'U'}, {}, {}, {letter: 'A', clues : {left: 1}}, {letter: 'H'}, {letter: 'V'}, {letter: 'E'}, {letter: 'N'}],
     [{}, {}, {}, {}, {letter: 'A'}, {}, {}, {letter: 'H'}, {}, {}, {letter: 'D'}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'T'}, {letter: 'A'}, {letter: 'I'}, {letter: 'M'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'T', clues : {left: 10}}, {letter: 'A'}, {letter: 'I'}, {letter: 'M'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}],
 ];
 
 const level4 = [
@@ -141,8 +141,6 @@ function generateCrosswordGrid(data) {
 
     document.getElementById('game-container').appendChild(table);
 }
-
-generateCrosswordGrid(level1);
 
 let selectedCharacter = null;
 document.querySelectorAll('.alphabet').forEach(button => {
