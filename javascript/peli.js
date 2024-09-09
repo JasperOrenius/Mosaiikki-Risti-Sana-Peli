@@ -114,6 +114,7 @@ function generateCrosswordGrid(data) {
                 input.className = 'cell';
                 input.maxLength = 1;
                 input.dataset.answer = cellData.letter;
+                input.readOnly = true;
                 
                 if (cellData.clues) {
                     if (cellData.clues.above) {
