@@ -5,15 +5,6 @@ body {
     justify-content: center;
     margin: 0;
 }
-table {
-    table-layout: fixed;
-    border-spacing: 0;
-    border-collapse: separate;
-}
-td {
-    padding: 0;
-    margin: 0;
-}
 #game {
     width: 700px;
     height: 650px;
@@ -36,19 +27,27 @@ td {
     align-items: center;
     flex-direction: column;
     border-radius: 8px;
-    margin-top: 0px;
+    margin-top: 10px;
+    padding: 0;
+}
+#game-container table {
+    padding: 0;
+    margin: 0;
 }
 .cell {
-    width: 15px;
-    height: 15px;
-    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
     font-family: Arial;
     border-collapse: collapse;
     border: 1px solid black;
     text-align: center;
     cursor: pointer;
     position: relative;
-    box-sizing: border-box;
+}
+.cell-item {
+    position: relative;
+    display: inline-block;
 }
 .cell-number {
     position: absolute;
@@ -86,22 +85,21 @@ td {
     margin-bottom: 20px;
 }
 .clue-image {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     margin: 5px;
     border: 2px solid #aaa;
     border-radius: 8px;
     object-fit: cover;
 }
 input[type="text"] {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     font-size: 14px;
     text-align: center;
     border: 1px solid black;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 .correct {
     background-color: lightgreen;

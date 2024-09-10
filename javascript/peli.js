@@ -58,26 +58,22 @@ const level4 = [
 ]
 
 const level5 = [
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'P'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {}, {letter: 'P'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'J'}, {letter: 'A'}, {letter: 'U'}, {letter: 'H'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'M'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'N'}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {letter: 'H'}, {letter: 'E'}, {letter: 'R'}, {letter: 'K'}, {letter: 'K'}, {letter: 'U'}, {letter: 'T'}, {letter: 'A'}, {letter: 'T'}, {letter: 'T'}, {letter: 'I'}, {}, {}, {}, {letter: 'O'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {letter: 'V'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'V'}, {letter: 'A'}, {letter: 'A'}, {letter: 'L'}, {letter: 'E'}, {letter: 'A'}, {letter: 'O'}, {letter: 'R'}, {letter: 'A'}, {letter: 'K'}, {letter: 'A'}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {letter: 'H'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {letter: 'O'}, {letter: 'R'}, {letter: 'V'}, {letter: 'A'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {letter: 'V'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {letter: 'E'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'V'}, {}, {}, {}, {}, {}, {letter: 'K'}, {letter: 'Ä'}, {letter: 'R'}, {letter: 'P'}, {letter: 'Ä'}, {letter: 'S'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{letter: 'K'}, {letter: 'O'}, {letter: 'I'}, {letter: 'V'}, {letter: 'U'}, {letter: 'N'}, {letter: 'K'}, {letter: 'A'}, {letter: 'N'}, {letter: 'T'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'M'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {letter: 'V'}, {letter: 'A'}, {letter: 'A'}, {letter: 'L'}, {letter: 'E'}, {letter: 'A'}, {letter: 'O'}, {letter: 'R'}, {letter: 'A'}, {letter: 'K'}, {letter: 'A'}, {letter: 'S'}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {letter: 'K'}, {letter: 'O'}, {letter: 'R'}, {letter: 'V'}, {letter: 'A'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {letter: 'Ä'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H'}, {letter: 'E'}, {letter: 'R'}, {letter: 'K'}, {letter: 'K'}, {letter: 'U'}, {letter: 'T'}, {letter: 'A'}, {letter: 'T'}, {letter: 'T'}, {letter: 'I'}, {}, {}, {letter: 'R'}, {letter: 'O'}, {letter: 'U'}, {letter: 'S'}, {letter: 'K'}, {letter: 'U'}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {letter: 'P'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {letter: 'Ä'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{letter: 'J'}, {letter: 'A'}, {letter: 'U'}, {letter: 'H'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'V'}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {letter: 'U'}, {letter: 'P'}, {letter: 'P'}, {letter: 'I'}, {letter: 'L'}, {letter: 'O'}, {letter: 'V'}, {letter: 'A'}, {letter: 'H'}, {letter: 'V'}, {letter: 'E'}, {letter: 'R'}, {letter: 'O'}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {letter: 'O'}, {letter: 'I'}, {letter: 'V'}, {letter: 'U'}, {letter: 'N'}, {letter: 'K'}, {letter: 'A'}, {letter: 'N'}, {letter: 'T'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
 ];
 
 const level6 = [
@@ -143,6 +139,21 @@ function generateCrosswordGrid(data) {
     document.getElementById('game-container').appendChild(table);
 }
 
+function scaleGrid() {
+    const gameContainer = document.getElementById('game-container');
+    const game = document.getElementById('game');
+    const table = gameContainer.querySelector('table');
+    
+    const scaleX = game.clientWidth / table.offsetWidth;
+    const scaleY = (game.clientHeight - 100) / table.offsetHeight;
+
+    const scale = Math.min(scaleX, scaleY);
+
+    table.style.transform = `scale(${scale})`;
+    table.style.transformOrigin = 'top left';
+}
+
+
 let selectedCharacter = null;
 document.querySelectorAll('.alphabet').forEach(button => {
     button.addEventListener('click', () => {
@@ -154,19 +165,24 @@ document.querySelectorAll('.alphabet').forEach(button => {
 
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('cell') && selectedCharacter) {
-        event.target.value = selectedCharacter;
-    }
-});
+        const cell = event.target;
+        cell.value = selectedCharacter;
 
-function checkAnswers() {
-    const cells = document.querySelectorAll('input.cell');
-    cells.forEach(cell => {
         if (cell.value.toUpperCase() === cell.dataset.answer) {
             cell.classList.add('correct');
             cell.classList.remove('incorrect');
+            cell.readOnly = true;
         } else {
             cell.classList.add('incorrect');
             cell.classList.remove('correct');
+            
+            setTimeout(() => {
+                cell.value = '';
+                cell.classList.remove('incorrect');
+            }, 1000);
         }
-    });
-}
+
+        document.querySelectorAll('.alphabet').forEach(btn => btn.classList.remove('selected-character'));
+        selectedCharacter = null;
+    }
+});
