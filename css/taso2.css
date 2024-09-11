@@ -17,7 +17,6 @@ body {
     background-color: #ccc0b4;
     border: 12px solid #ccc0b4;
     border-radius: 8px;
-    overflow: hidden;
 }
 #game-container {
     flex-grow: 1;
@@ -30,8 +29,8 @@ body {
     margin-top: 10px;
 }
 .cell {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     font-size: 16px;
     font-family: Arial;
     border-collapse: collapse;
@@ -88,8 +87,8 @@ body {
     object-fit: cover;
 }
 input[type="text"] {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     font-size: 14px;
     text-align: center;
     border: 1px solid black;

@@ -17,7 +17,6 @@ body {
     background-color: #ccc0b4;
     border: 12px solid #ccc0b4;
     border-radius: 8px;
-    overflow: hidden;
 }
 #game-container {
     flex-grow: 1;

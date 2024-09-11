@@ -41,54 +41,54 @@ const level3 = [
 ];
 
 const level4 = [
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'P'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {letter: 'E'}, {letter: 'P'}, {letter: 'P'}, {letter: 'Ä'}, {letter: 'K'}, {letter: 'E'}, {letter: 'R'}, {letter: 'T'}, {letter: 'T'}, {letter: 'U'}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'P'}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'V'}, {letter: 'A'}, {letter: 'A'}, {letter: 'K'}, {letter: 'S'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {letter: 'K'}, {}, {}, {}, {letter: 'Ä'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}],
-    [{}, {}, {}, {}, {}, {letter: 'M'}, {letter: 'E'}, {letter: 'H'}, {letter: 'I'}, {letter: 'L'}, {letter: 'Ä'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H'}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'P', clues : {above: 8}}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L', clues : {left: 5}}, {letter: 'E'}, {letter: 'P'}, {letter: 'P'}, {letter: 'Ä'}, {letter: 'K'}, {letter: 'E'}, {letter: 'R'}, {letter: 'T'}, {letter: 'T'}, {letter: 'U'}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'P', clues : {above: 9}}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'V', clues : {left: 10}}, {letter: 'A'}, {letter: 'A'}, {letter: 'K'}, {letter: 'S'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K', clues : {above: 4}}, {}, {letter: 'K', clues : {above: 3}}, {}, {}, {}, {letter: 'Ä'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}],
+    [{}, {}, {}, {}, {}, {letter: 'M', clues : {left: 6}}, {letter: 'E'}, {letter: 'H'}, {letter: 'I'}, {letter: 'L'}, {letter: 'Ä'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'M'}, {}, {letter: 'R'}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {letter: 'P'}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'N'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {letter: 'Ä'}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'E'}, {}],
-    [{}, {}, {}, {}, {letter: 'A'}, {letter: 'M'}, {letter: 'P'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {letter: 'E'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'N'}, {}],
+    [{}, {}, {}, {}, {letter: 'A', clues : {left: 1}}, {letter: 'M'}, {letter: 'P'}, {letter: 'I'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {letter: 'E'}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'N'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {letter: 'E'}, {}, {}, {}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{letter: 'M'}, {letter: 'U'}, {letter: 'U'}, {letter: 'R'}, {letter: 'A'}, {letter: 'H'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{letter: 'M', clues : {left: 7}}, {letter: 'U'}, {letter: 'U'}, {letter: 'R'}, {letter: 'A'}, {letter: 'H'}, {letter: 'A'}, {letter: 'I'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {letter: 'H'}, {letter: 'Y'}, {letter: 'T'}, {letter: 'T'}, {letter: 'Y'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {letter: 'H', clues : {left: 2}}, {letter: 'Y'}, {letter: 'T'}, {letter: 'T'}, {letter: 'Y'}, {letter: 'N'}, {letter: 'E'}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
 ]
 
 const level5 = [
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'M'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K', clues : {above: 3}}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'M', clues : {above: 7}}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {letter: 'V'}, {letter: 'A'}, {letter: 'A'}, {letter: 'L'}, {letter: 'E'}, {letter: 'A'}, {letter: 'O'}, {letter: 'R'}, {letter: 'A'}, {letter: 'K'}, {letter: 'A'}, {letter: 'S'}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {letter: 'K'}, {letter: 'O'}, {letter: 'R'}, {letter: 'V'}, {letter: 'A'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}],
+    [{}, {letter: 'V', clues : {left: 10}}, {letter: 'A'}, {letter: 'A'}, {letter: 'L'}, {letter: 'E'}, {letter: 'A'}, {letter: 'O'}, {letter: 'R'}, {letter: 'A'}, {letter: 'K'}, {letter: 'A'}, {letter: 'S'}, {}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {letter: 'K', clues : {above: 4, left: 6}}, {letter: 'O'}, {letter: 'R'}, {letter: 'V'}, {letter: 'A'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}, {}, {}, {letter: 'Ä'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H'}, {letter: 'E'}, {letter: 'R'}, {letter: 'K'}, {letter: 'K'}, {letter: 'U'}, {letter: 'T'}, {letter: 'A'}, {letter: 'T'}, {letter: 'T'}, {letter: 'I'}, {}, {}, {letter: 'R'}, {letter: 'O'}, {letter: 'U'}, {letter: 'S'}, {letter: 'K'}, {letter: 'U'}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H', clues : {left: 1}}, {letter: 'E'}, {letter: 'R'}, {letter: 'K'}, {letter: 'K'}, {letter: 'U'}, {letter: 'T'}, {letter: 'A'}, {letter: 'T'}, {letter: 'T'}, {letter: 'I'}, {}, {}, {letter: 'R', clues : {left: 8}}, {letter: 'O'}, {letter: 'U'}, {letter: 'S'}, {letter: 'K'}, {letter: 'U'}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {letter: 'P'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {letter: 'Ä'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{letter: 'J'}, {letter: 'A'}, {letter: 'U'}, {letter: 'H'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'V'}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
+    [{letter: 'J', clues : {left: 2}}, {letter: 'A'}, {letter: 'U'}, {letter: 'H'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'V'}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {letter: 'S'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S'}, {letter: 'U'}, {letter: 'P'}, {letter: 'P'}, {letter: 'I'}, {letter: 'L'}, {letter: 'O'}, {letter: 'V'}, {letter: 'A'}, {letter: 'H'}, {letter: 'V'}, {letter: 'E'}, {letter: 'R'}, {letter: 'O'}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'S', clues : {left: 9}}, {letter: 'U'}, {letter: 'P'}, {letter: 'P'}, {letter: 'I'}, {letter: 'L'}, {letter: 'O'}, {letter: 'V'}, {letter: 'A'}, {letter: 'H'}, {letter: 'V'}, {letter: 'E'}, {letter: 'R'}, {letter: 'O'}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'E'}, {}, {}, {}, {letter: 'N'}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {letter: 'O'}, {letter: 'I'}, {letter: 'V'}, {letter: 'U'}, {letter: 'N'}, {letter: 'K'}, {letter: 'A'}, {letter: 'N'}, {letter: 'T'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K', clues : {left: 5}}, {letter: 'O'}, {letter: 'I'}, {letter: 'V'}, {letter: 'U'}, {letter: 'N'}, {letter: 'K'}, {letter: 'A'}, {letter: 'N'}, {letter: 'T'}, {letter: 'O'}, {letter: 'S'}, {letter: 'I'}, {letter: 'E'}, {letter: 'N'}, {letter: 'I'}, {}, {}, {}, {}, {}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'I'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}],
 ];
 
 const level6 = [
-    [{}, {}, {}, {}, {}, {}, {letter: 'P'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H'}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'P', clues : {above: 7}}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'H', clues : {above: 1}}],
     [{}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'E'}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {letter: 'T'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {}, {}, {letter: 'T', clues : {above: 8}}, {}, {}, {}, {}, {}, {}, {}, {letter: 'R'}],
     [{}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {}, {letter: 'Y'}, {}, {}, {}, {}, {}, {}, {}, {letter: 'U'}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {letter: 'M'}, {}, {}, {letter: 'K'}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {letter: 'N'}, {}, {letter: 'K'}, {}, {}, {letter: 'U'}, {}, {}, {letter: 'K'}],
-    [{}, {}, {}, {}, {}, {}, {letter: 'K'}, {letter: 'O'}, {letter: 'R'}, {letter: 'P'}, {letter: 'I'}, {letter: 'P'}, {letter: 'A'}, {letter: 'A'}, {letter: 'T'}, {letter: 'S'}, {letter: 'A'}, {letter: 'M'}, {letter: 'A'}],
-    [{letter: 'V'}, {letter: 'A'}, {letter: 'D'}, {letter: 'E'}, {letter: 'L'}, {letter: 'M'}, {letter: 'A'}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {letter: 'T'}, {}, {letter: 'A'}, {}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'U'}, {}, {}, {}, {letter: 'R'}, {}, {}, {}, {}, {letter: 'M', clues : {above: 6}}, {}, {}, {letter: 'K'}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'K'}, {}, {}, {}, {letter: 'N'}, {}, {letter: 'K', clues : {above: 2}}, {}, {}, {letter: 'U'}, {}, {}, {letter: 'K'}],
+    [{}, {}, {}, {}, {}, {}, {letter: 'K', clues : {left: 3}}, {letter: 'O'}, {letter: 'R'}, {letter: 'P'}, {letter: 'I'}, {letter: 'P'}, {letter: 'A'}, {letter: 'A'}, {letter: 'T'}, {letter: 'S'}, {letter: 'A'}, {letter: 'M', clues : {above: 5}}, {letter: 'A'}],
+    [{letter: 'V', clues : {left: 9}}, {letter: 'A'}, {letter: 'D'}, {letter: 'E'}, {letter: 'L'}, {letter: 'M'}, {letter: 'A'}, {}, {}, {}, {}, {}, {letter: 'R'}, {}, {}, {letter: 'T'}, {}, {letter: 'A'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'P'}, {}, {}, {letter: 'I'}, {}, {letter: 'N'}, {}],
-    [{letter: 'V'}, {letter: 'A'}, {letter: 'R'}, {letter: 'I'}, {letter: 'K'}, {letter: 'S'}, {letter: 'E'}, {letter: 'N'}, {letter: 'M'}, {letter: 'A'}, {letter: 'R'}, {letter: 'J'}, {letter: 'A'}, {}, {}, {letter: 'K'}, {}, {letter: 'S'}, {}],
+    [{letter: 'V', clues : {left: 10}}, {letter: 'A'}, {letter: 'R'}, {letter: 'I'}, {letter: 'K'}, {letter: 'S'}, {letter: 'E'}, {letter: 'N'}, {letter: 'M'}, {letter: 'A'}, {letter: 'R'}, {letter: 'J'}, {letter: 'A'}, {}, {}, {letter: 'K'}, {}, {letter: 'S'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'L'}, {}, {}, {letter: 'K'}, {}, {letter: 'I'}, {}],
-    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {letter: 'L'}, {letter: 'A'}, {letter: 'K'}, {letter: 'K'}, {letter: 'A'}],
+    [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'O'}, {}, {letter: 'L', clues : {left: 4}}, {letter: 'A'}, {letter: 'K'}, {letter: 'K'}, {letter: 'A'}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'K'}, {}],
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}],
 ];
@@ -153,11 +153,10 @@ function scaleGrid() {
     table.style.transformOrigin = 'top left';
 }
 
-
-let selectedCharacter = null;
 document.querySelectorAll('.alphabet').forEach(button => {
     button.addEventListener('click', () => {
         document.querySelectorAll('.alphabet').forEach(btn => btn.classList.remove('selected-character'));
+
         selectedCharacter = button.textContent;
         button.classList.add('selected-character');
     });
@@ -166,23 +165,24 @@ document.querySelectorAll('.alphabet').forEach(button => {
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('cell') && selectedCharacter) {
         const cell = event.target;
+
+        if (cell.dataset.locked === 'true') {
+            return;
+        }
+        
         cell.value = selectedCharacter;
 
         if (cell.value.toUpperCase() === cell.dataset.answer) {
             cell.classList.add('correct');
             cell.classList.remove('incorrect');
-            cell.readOnly = true;
+            cell.dataset.locked = 'true';
         } else {
             cell.classList.add('incorrect');
             cell.classList.remove('correct');
-            
             setTimeout(() => {
                 cell.value = '';
                 cell.classList.remove('incorrect');
             }, 1000);
         }
-
-        document.querySelectorAll('.alphabet').forEach(btn => btn.classList.remove('selected-character'));
-        selectedCharacter = null;
     }
 });
