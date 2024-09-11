@@ -5,110 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>index</title>
   <link rel="stylesheet" href="css/index.css">
-  <style>
-    .menu {
-      display: none; /* Hide the images and buttons initially */
-    }
-
-    .start-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 20vh;
-    }
-
-    .start-button button {
-      padding: 20px 40px;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .buttons {
-      display: none; /* Buttons are hidden by default */
-    }
-
-    /* Ensure title is always visible */
-    .title {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  </style>
-  <script>
-    function startGame() {
-      // Hide the start button and show the menu (images)
-      document.getElementById('startButton').style.display = 'none';
-      document.querySelector('.menu').style.display = 'block';
-    }
-
-    function toggleButtons(buttonContainer) {
-      // Toggle the display of the buttons (show/hide)
-      const buttons = buttonContainer.querySelector('.buttons');
-      if (buttons.style.display === "none" || buttons.style.display === "") {
-        buttons.style.display = "block";
-      } else {
-        buttons.style.display = "none";
-      }
-    }
-  </script>
 </head>
 <body>
 <div class="start-screen" id="startScreen">
   <h1 class="title">Risti-Sana peli</h1>
-
-  <!-- Start Button in the center -->
   <div id="startButton" class="start-button">
     <button onclick="startGame()">Aloita Peli</button>
   </div>
-
-  <!-- Menu with images and buttons -->
   <div class="menu">
     <div class="row">
-      <div class="menu-item" onclick="toggleButtons(this)">
-        <img src="images/Eläimet/Karhu.png" alt="karhu">
+      <div class="menu-item">
+        <div class="category">Eläimet</div>
+        <img src="images/Eläimet/Karhu.png" alt="karhu" onclick="toggleCategory(this)">
         <div class="buttons">
-          <button class="button easy" onclick="location.href='pages/Taso1.html'">Helppo</button>
+          <button class="button easy" onclick="showInstructions('pages/Taso1.html')">Helppo</button>
           <button class="button hard" onclick="location.href='pages/Taso1.html'">Vaikea</button>
         </div>
       </div>
-      <div class="menu-item" onclick="toggleButtons(this)">
-        <img src="images/Linnut/Harakka.png" alt="harakka">
+      <div class="menu-item">
+        <div class="category">Linnut</div>
+        <img src="images/Linnut/Harakka.png" alt="harakka" onclick="toggleCategory(this)">
         <div class="buttons">
-          <button class="button easy" onclick="location.href='pages/Taso2.html'">Helppo</button>
+          <button class="button easy" onclick="showInstructions('pages/Taso2.html')">Helppo</button>
           <button class="button hard" onclick="location.href='pages/Taso2.html'">Vaikea</button>
         </div>
       </div>
-      <div class="menu-item" onclick="toggleButtons(this)">
-        <img src="images/Kalat/Ahven.png" alt="ahven">
+      <div class="menu-item">
+        <div class="category">Kalat</div>
+        <img src="images/Kalat/Ahven.png" alt="ahven" onclick="toggleCategory(this)">
         <div class="buttons">
-          <button class="button easy" onclick="location.href='pages/Taso3.html'">Helppo</button>
+          <button class="button easy" onclick="showInstructions('pages/Taso3.html')">Helppo</button>
           <button class="button hard" onclick="location.href='pages/Taso3.html'">Vaikea</button>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="menu-item" onclick="toggleButtons(this)">
-        <img src="images/Hyönteiset/Ampiainen.png" alt="ampiainen">
+      <div class="menu-item">
+        <div class="category">Hyönteiset</div>
+        <img src="images/Hyönteiset/Ampiainen.png" alt="ampiainen" onclick="toggleCategory(this)">
         <div class="buttons">
-          <button class="button easy" onclick="location.href='pages/Taso4.html'">Helppo</button>
+          <button class="button easy" onclick="showInstructions('pages/Taso4.html')">Helppo</button>
           <button class="button hard" onclick="location.href='pages/Taso4.html'">Vaikea</button>
         </div>
       </div>
-      <div class="menu-item" onclick="toggleButtons(this)">
-        <img src="images/Sienet/Herkkutatti.png" alt="herkkutatti">
+      <div class="menu-item">
+        <div class="category">Sienet</div>
+        <img src="images/Sienet/Herkkutatti.png" alt="herkkutatti" onclick="toggleCategory(this)">
         <div class="buttons">
-          <button class="button easy" onclick="location.href='pages/Taso5.html'">Helppo</button>
+          <button class="button easy" onclick="showInstructions('pages/Taso5.html')">Helppo</button>
           <button class="button hard" onclick="location.href='pages/Taso5.html'">Vaikea</button>
         </div>
       </div>
-      <div class="menu-item" onclick="toggleButtons(this)">
-        <img src="images/Marjat/Mansikka.png" alt="mansikka">
+      <div class="menu-item">
+        <div class="category">Marjat</div>
+        <img src="images/Marjat/Mansikka.png" alt="mansikka" onclick="toggleCategory(this)">
         <div class="buttons">
-          <button class="button easy" onclick="location.href='pages/Taso6.html'">Helppo</button>
+          <button class="button easy" onclick="showInstructions('pages/Taso6.html')">Helppo</button>
           <button class="button hard" onclick="location.href='pages/Taso6.html'">Vaikea</button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div id="instructionsModal" class="modal">
+  <div class="modal-content">
+    <h2>Ohjeet</h2>
+    <p>Ennen kuin aloitat pelin, tässä on muutamia ohjeita pelistä.</p>
+    <ul>
+      <li>kirjoita</li>
+      <li>tähä</li>
+      <li>ohjeet</li>
+    </ul>
+    <button id="startGameButton">Aloita Peli</button>
+    <button onclick="closeModal()">Sulje</button>
+  </div>
+</div>
+<script src="javascript/index.js"></script>
 </body>
 </html>

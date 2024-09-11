@@ -5,7 +5,7 @@
     margin: 50px auto;
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.5);
-    padding: 10px; 
+    padding: 10px;
     color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     background-image: url('../images/background.png');
@@ -17,13 +17,25 @@
     align-items: center;
 }
 
-.title {
-    font-size: 100px; 
-    margin-bottom: 20px; 
-    color: white;
-    text-align: center; 
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
 }
 
+.start-button button {
+    padding: 20px 40px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
 
 .menu {
     width: 100%;
@@ -37,31 +49,73 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .menu-item {
     text-align: center;
+    position: relative;
+    margin: 10px;
 }
 
 .menu-item img {
-    width: 130px; 
+    width: 130px;
     height: 130px;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.category {
+    display: none;
+}
+
+.category.show {
+    display: block;
 }
 
 .buttons {
-    display: flex;
+    display: none;
     justify-content: space-around;
-    margin-top: 5px; 
+    margin-top: 10px;
+}
+
+.buttons.show {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .button {
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
-    padding: 8px 15px; 
-    margin: 0 3px; 
-    font-size: 16px; 
+    padding: 8px 15px;
+    margin: 0 3px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 20px;
