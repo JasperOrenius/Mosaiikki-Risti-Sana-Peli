@@ -5,6 +5,12 @@ body {
     justify-content: center;
     margin: 0;
 }
+button:hover {
+    transform: scale(1.1);
+}
+button:active {
+    transform: translateY(4px);
+}
 #game {
     width: 700px;
     height: 650px;
@@ -126,4 +132,18 @@ input[type="text"] {
     background-color: #aaa;
     border: 2px solid #555;
     color: white;
+}
+#exit-button {
+    align-self: flex-start;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px transparent;
+    font-family: arial black, sans-serif;
+    background-color: red;
+    box-shadow: 0 3px 5px black;
+    font-size: 25px;
 }
