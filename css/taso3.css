@@ -91,7 +91,7 @@ button:active {
     margin: 5px;
     border: 2px solid #aaa;
     border-radius: 8px;
-    object-fit: cover;
+    object-fit: contain;
 }
 input[type="text"] {
     width: 20px;
