@@ -18,11 +18,33 @@ function startGame() {
     startGameButton.onclick = function() {
       window.location.href = url;
     };
-  }
+}
+
+
+  function openModal(imageSrc, difficultyUrl) {
+    const modal = document.getElementById('imageModal');
+    const modalContent = document.getElementById('modalContent');
+    
+    modal.style.display = 'flex';
+    modalContent.style.backgroundImage = `url(${imageSrc})`;
+
+    const easyButton = document.getElementById('easyButton');
+    const hardButton = document.getElementById('hardButton');
+
+    easyButton.onclick = function() {
+      closeModal();
+      showInstructions(difficultyUrl); 
+  };
+
+    hardButton.onclick = function() {
+        window.location.href = difficultyUrl; 
+    };
+}
 
   function closeModal() {
-    document.getElementById('instructionsModal').style.display = 'none';
-  }
+  document.getElementById('imageModal').style.display = 'none';
+  document.getElementById('instructionsModal').style.display = 'none';
+}
 
   function toggleCategory(imageElement) {
     const categoryElement = imageElement.previousElementSibling; 
@@ -32,4 +54,10 @@ function startGame() {
     categoryElement.classList.toggle('show');
     buttonsElement.classList.toggle('show');
   }
-  
+  document.getElementById('imageModal').addEventListener('click', function(event) {
+    const modalContent = document.getElementById('modalContent');
+    
+    if (!modalContent.contains(event.target)) {
+        closeModal();
+    }
+});

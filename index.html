@@ -16,71 +16,56 @@
     <div class="row">
       <div class="menu-item">
         <div class="category">Eläimet</div>
-        <img src="images/Eläimet/Karhu.png" alt="karhu" onclick="toggleCategory(this)">
-        <div class="buttons">
-          <button class="button easy" onclick="showInstructions('pages/Taso1.html')">Helppo</button>
-          <button class="button hard" onclick="location.href='pages/Taso1.html'">Vaikea</button>
-        </div>
+        <img src="images/Eläimet/Karhu.png" alt="karhu" onclick="openModal('images/Eläimet/Karhu.png', 'pages/Taso1.html')">
       </div>
       <div class="menu-item">
         <div class="category">Linnut</div>
-        <img src="images/Linnut/Harakka.png" alt="harakka" onclick="toggleCategory(this)">
-        <div class="buttons">
-          <button class="button easy" onclick="showInstructions('pages/Taso2.html')">Helppo</button>
-          <button class="button hard" onclick="location.href='pages/Taso2.html'">Vaikea</button>
-        </div>
+        <img src="images/Linnut/Harakka.png" alt="harakka" onclick="openModal('images/Linnut/Harakka.png', 'pages/Taso2.html')">
       </div>
       <div class="menu-item">
         <div class="category">Kalat</div>
-        <img src="images/Kalat/Ahven.png" alt="ahven" onclick="toggleCategory(this)">
-        <div class="buttons">
-          <button class="button easy" onclick="showInstructions('pages/Taso3.html')">Helppo</button>
-          <button class="button hard" onclick="location.href='pages/Taso3.html'">Vaikea</button>
-        </div>
+        <img src="images/Kalat/Ahven.png" alt="ahven" onclick="openModal('images/Kalat/Ahven.png', 'pages/Taso3.html')">
       </div>
     </div>
     <div class="row">
       <div class="menu-item">
         <div class="category">Hyönteiset</div>
-        <img src="images/Hyönteiset/Ampiainen.png" alt="ampiainen" onclick="toggleCategory(this)">
-        <div class="buttons">
-          <button class="button easy" onclick="showInstructions('pages/Taso4.html')">Helppo</button>
-          <button class="button hard" onclick="location.href='pages/Taso4.html'">Vaikea</button>
-        </div>
+        <img src="images/Hyönteiset/Ampiainen.png" alt="ampiainen" onclick="openModal('images/Hyönteiset/Ampiainen.png', 'pages/Taso4.html')">
       </div>
       <div class="menu-item">
         <div class="category">Sienet</div>
-        <img src="images/Sienet/Herkkutatti.png" alt="herkkutatti" onclick="toggleCategory(this)">
-        <div class="buttons">
-          <button class="button easy" onclick="showInstructions('pages/Taso5.html')">Helppo</button>
-          <button class="button hard" onclick="location.href='pages/Taso5.html'">Vaikea</button>
-        </div>
+        <img src="images/Sienet/Herkkutatti.png" alt="herkkutatti" onclick="openModal('images/Sienet/Herkkutatti.png', 'pages/Taso5.html')">
       </div>
       <div class="menu-item">
         <div class="category">Marjat</div>
-        <img src="images/Marjat/Mansikka.png" alt="mansikka" onclick="toggleCategory(this)">
-        <div class="buttons">
-          <button class="button easy" onclick="showInstructions('pages/Taso6.html')">Helppo</button>
-          <button class="button hard" onclick="location.href='pages/Taso6.html'">Vaikea</button>
-        </div>
+        <img src="images/Marjat/Mansikka.png" alt="mansikka" onclick="openModal('images/Marjat/Mansikka.png', 'pages/Taso6.html')">
       </div>
-    </div>
   </div>
 </div>
-
 <div id="instructionsModal" class="modal">
   <div class="modal-content">
     <h2>Ohjeet</h2>
     <p>Ennen kuin aloitat pelin, tässä on muutamia ohjeita pelistä.</p>
     <ul>
-      <li>kirjoita</li>
-      <li>tähä</li>
-      <li>ohjeet</li>
+      <li>Sinun pitää ratkaista ristikko</li>
+      <li>Kirjoita eläimen nimi kirjaimilla</li>
+      <li>Klikkaa kirjainta ja aseta se oikeaan kohtaan</li>
     </ul>
     <button id="startGameButton">Aloita Peli</button>
     <button onclick="closeModal()">Sulje</button>
   </div>
 </div>
+
+<div id="imageModal" class="modal">
+  <div class="modal-content" id="modalContent">
+    <div class="buttons">
+      <button class="button easy" id="easyButton">Helppo</button>
+      <button class="button hard" id="hardButton">Vaikea</button>
+    </div>
+  </div>
+</div>
+
 <script src="javascript/index.js"></script>
 </body>
 </html>
+
