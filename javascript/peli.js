@@ -95,6 +95,13 @@ const level6 = [
 
 let isTutorialScreenVisible = true;
 
+let currentLevel = null;
+
+function setCurrentLevel(level) {
+    currentLevel = level;
+    generateCrosswordGrid(level);
+}
+
 function generateCrosswordGrid(data) {
     const table = document.createElement('table');
     table.style.borderSpacing = '0';
@@ -112,6 +119,7 @@ function generateCrosswordGrid(data) {
                 input.className = 'cell';
                 input.maxLength = 1;
                 input.dataset.answer = cellData.letter;
+                input.dataset.locked = false;
                 input.readOnly = true;
                 
                 if (cellData.clues) {
@@ -139,6 +147,31 @@ function generateCrosswordGrid(data) {
     });
 
     document.getElementById('game-container').appendChild(table);
+}
+
+function calculateScore() {
+    const inputs = document.querySelectorAll('input.cell');
+    let totalLetters = 0;
+    let correctLetters = 0;
+
+    inputs.forEach(input => {
+        const answer = input.dataset.answer;
+        if (answer) {
+            totalLetters++;
+            if (input.value.toUpperCase() === answer.toUpperCase()) {
+                correctLetters++;
+            }
+        }
+    });
+
+    if (totalLetters === 0) return 0;
+
+    const percentage = (correctLetters / totalLetters) * 10;
+    const score = Math.round(percentage * 10) / 10;
+
+    localStorage.setItem('crosswordScore', score);
+
+    return score;
 }
 
 function scaleGrid() {
@@ -187,6 +220,8 @@ document.addEventListener('click', (event) => {
             }, 1000);
         }
     }
+    const score = calculateScore();
+    console.log(`Current Score: ${score}`);
 });
 
 function toggleTutorialScreen() {
