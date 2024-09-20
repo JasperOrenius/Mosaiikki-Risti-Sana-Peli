@@ -134,6 +134,7 @@ input[type="text"] {
     color: white;
 }
 #exit-button {
+    z-index: 1;
     align-self: flex-start;
     position: absolute;
     top: 5px;
@@ -146,4 +147,53 @@ input[type="text"] {
     background-color: red;
     box-shadow: 0 3px 5px black;
     font-size: 25px;
+}
+#help-button {
+    z-index: 1;
+    align-self: flex-start;
+    position: absolute;
+    top: 5px;
+    left: 55px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px transparent;
+    font-family: arial black, sans-serif;
+    background-color: lightgreen;
+    box-shadow: 0 3px 5px black;
+    font-size: 25px;
+}
+#start-game-button {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 250px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+#tutorial-screen {
+    position: absolute;
+    width: 675px;
+    height: 625px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    border: 10px solid transparent;
+    background: rgb(255,213,40);
+    background: radial-gradient(circle, rgba(255,213,40,1) 0%, rgba(211,97,87,1) 100%);
+    border-radius: 6px;
+}
+#tutorial-text {
+    font-size: 25px;
+    font-family: arial;
+    font-weight: bold;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 20px;
 }

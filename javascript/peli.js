@@ -93,6 +93,8 @@ const level6 = [
     [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {letter: 'A'}, {}],
 ];
 
+let isTutorialScreenVisible = true;
+
 function generateCrosswordGrid(data) {
     const table = document.createElement('table');
     table.style.borderSpacing = '0';
@@ -186,3 +188,11 @@ document.addEventListener('click', (event) => {
         }
     }
 });
+
+function toggleTutorialScreen() {
+    const tutorialScreen = document.getElementById('tutorial-screen');
+    const gameContainer = document.getElementById('game-container');
+    isTutorialScreenVisible = !isTutorialScreenVisible;
+    tutorialScreen.style.display = isTutorialScreenVisible ? 'block' : 'none';
+    gameContainer.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
+}

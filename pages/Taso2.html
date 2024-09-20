@@ -9,7 +9,14 @@
 <body>
     <div id="game">
         <a href="../index.html"><button id="exit-button">X</button></a>
-        <div id="game-container">
+        <button id="help-button" onclick="toggleTutorialScreen()">?</button>
+        <div id="tutorial-screen">
+            <a href="../index.html"><button id="exit-button">X</button></a>
+            <button id="help-button" onclick="toggleTutorialScreen()">?</button>
+            <p id="tutorial-text">Ohjeet: Ensimmäisenä sinun on valittava kirjain ruudun alaosassa sijaitsevasta valikosta ja sen jälkeen klikkaa ruudukosta ruutua mihin haluat kirjaimen laittaa. Jos ruudun väri muuttuu vihreäksi, vastaus on oikein. Jos ruudun väri muuttu punaiseksi, vastaus on väärin. Onnea Peliin!</p>
+            <button id="start-game-button" onclick="toggleTutorialScreen()">SIIRRY PELIIN</button>
+        </div>
+        <div id="game-container" style="display: none;">
         </div>
         <div id="clues-container">
             <div class="clue-item">
