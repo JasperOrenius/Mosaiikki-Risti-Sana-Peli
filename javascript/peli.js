@@ -231,3 +231,107 @@ function toggleTutorialScreen() {
     tutorialScreen.style.display = isTutorialScreenVisible ? 'block' : 'none';
     gameContainer.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
 }
+
+currentMode = localStorage.getItem('currentMode');
+
+console.log(currentMode)
+
+const clueImages = document.querySelectorAll('.clue-image');
+clueImages.forEach(image => {
+    image.addEventListener('mouseenter', (event) => {
+        if (currentMode === 'easy') {
+            const animalName = event.target.alt; 
+            const info = animalInfo[animalName] || "Ei tietoa.";
+            showAnimalInfo(info, event);
+            if (currentMode === 'easy'){
+            } 
+        }
+    });
+
+    image.addEventListener('mouseout', () => {
+        const infoBox = document.getElementById('info-box');
+        infoBox.style.display = 'none'; 
+    });
+});
+
+
+function showAnimalInfo(info, event) {
+    const infoBox = document.getElementById('info-box');
+    infoBox.textContent = info;
+    infoBox.style.display = 'block';
+    infoBox.style.left = `${event.pageX + 10}px`;
+    infoBox.style.top = `${event.pageY + 10}px`; 
+}
+
+const animalInfo = {
+    "Clue 1": "Lyhytjalkainen ja lihaksikas peto.",
+    "Clue 2": "Suurin kasvisyöjä suomessa, tunnetaan suurista koiristaan.",
+    "Clue 3": "Tunnettu mustista karvatupsuista korvissaan.",
+    "Clue 4": "Nopea eläin, jolla on pitkät korvat.",
+    "Clue 5": "Suuri nisäkäs, joka tunnetaan voimastaan ja koosta.",
+    "Clue 6": "Pieni tai keskikokoinen kaikkiruokainen nisäkäs.",
+    "Clue 7": "Tunnettu padonrakennuskyvyistään.",
+    "Clue 8": "Tunnettu tuuheasta hännästään ja ketteryydestään.",
+    "Clue 9": "Kotieläin, joka liittyy usein arktisiin alueisiin.",
+    "Clue 10": "Tunnettu laumakäyttäytymisestään ja metsästyskyvyistään.",
+
+    "Clue 11": "Älykäs ja utelias lintu, joka on helposti tunnistettavissa mustavalkoisesta höyhenpeitteestään.",
+    "Clue 12": "Pieni ja rohkea lintu, joka elää usein metsissä ja syö hyönteisiä.",
+    "Clue 13": "Suuri ja majesteettinen vesilintu, joka tunnetaan pitkän kaulansa ja valkoisen höyhenpeitteensä ansiosta.",
+    "Clue 14": "Voimakas saalistajalintu, jolla on terävät kynnet ja erinomainen näkökyky.",
+    "Clue 15": "Korkea ja hoikka lintu, joka tunnetaan näyttävästä tanssistaan ja äänekkäästä kutsuäänestään.",
+    "Clue 16": "Pieni värikäs lintu, joka viihtyy pohjoisissa metsissä ja kerää ruokaa talven varalle.",
+    "Clue 17": "Metsässä pesivä lintu, jolla on pitkänomainen nokka ja se lentää usein hämärissä.",
+    "Clue 18": "Suuri metsälintu, joka tunnetaan soidinmenoistaan kevätaamuisin.",
+    "Clue 19": "Pieni ja ketterä lentäjä, joka tunnetaan nopeista liikkeistään ilmassa ja hyönteisten pyydystämisestä lennossa.",
+    "Clue 20": "Pieni ja vilkas lintu, joka on usein nähtävissä ruokintapaikoilla ja syö siemeniä.",
+
+    "Clue 21": "Pieni ja vahva kala, jolla on raidallinen kylki ja mieltymys matalaan veteen.",
+    "Clue 22": "Pitkä ja hoikka petokala, joka tunnetaan terävistä hampaistaan ja nopeista hyökkäyksistään.",
+    "Clue 23": "Syvän veden kala, jolla on suuri suu ja mieltymys hämärässä metsästämiseen.",
+    "Clue 24": "Leveä kylkinen kala, joka viihtyy hitaasti virtaavissa vesissä ja syö pohjasta.",
+    "Clue 25": "Suuri vaelluskala, joka tunnetaan hopeisesta kyljestään ja voimakkaasta vastarinnasta.",
+    "Clue 26": "Kylmän veden pohjakala, jolla on limainen iho ja se liikkuu erityisesti talvisin.",
+    "Clue 27": "Pieni ja hopeanhohtoinen kala, jota tavataan suurissa parvissa järvissä ja jokisuissa.",
+    "Clue 28": "Yleinen särkikala, joka viihtyy matalissa vesissä ja syö sekä kasveja että eläimiä.",
+    "Clue 29": "Vaelluskala, joka tunnetaan herkullisesta lihastaan ja arvostetaan kalastajien keskuudessa.",
+    "Clue 30": "Vahva virtavesikala, joka hyppii ylös virroissa ja on tunnettu lohikalojen sukulainen.",
+
+    "Clue 31": "Tunnistettava raidallinen hyönteinen, joka pistää puolustautuessaan.",
+    "Clue 32": "Pieni ja ärsyttävä hyönteinen, joka tunnetaan erityisesti kesäiltaisin ihmisten seurana.",
+    "Clue 33": "Nopeasti lentävä hyönteinen, joka viihtyy likaisissa paikoissa ja on usein sisätiloissa.",
+    "Clue 34": "Pyöreä ja pörröinen hyönteinen, joka kerää mettä ja pölyttää kukkia.",
+    "Clue 35": "Pieni värikäs hyönteinen, joka tunnetaan pilkullisesta selästään.",
+    "Clue 36": "Tärkeä pölyttäjä, joka valmistaa hunajaa ja elää yhteiskunnallisessa rakenteessa.",
+    "Clue 37": "Ahkera hyönteinen, joka elää suurissa yhteisöissä ja rakentaa monimutkaisia pesiä.",
+    "Clue 38": "Lyhytikäinen hyönteinen, jonka elämänkaari liittyy tiiviisti veteen.",
+    "Clue 39": "Värikäs ja siro hyönteinen, joka lentää kevyesti kukkien ympärillä.",
+    "Clue 40": "Pitkäjalkainen hyönteinen, joka usein erehdytään hämähäkiksi.",
+
+    "Clue 41": "Sieni, joka on monien suosima herkku ja kasvaa syksyisin havumetsissä.",
+    "Clue 42": "Sieni, jolla on jauhoinen haju ja joka kasvaa usein lehtometsissä.",
+    "Clue 43": "Kirkkaan keltainen sieni, jota kerätään paljon ruoanlaittoon.",
+    "Clue 44": "Sieni, jonka kirkkaanpunainen lakki on valkopilkullinen ja erittäin myrkyllinen.",
+    "Clue 45": "Sieni, joka kasvaa ryhmissä ja suosii koivujen ympäristöä.",
+    "Clue 46": "Epätavallisen näköinen, ryppyinen sieni, jota tulee käsitellä varoen myrkyllisyyden vuoksi.",
+    "Clue 47": "Tummanvärinen ja suppilomainen sieni, jota arvostetaan ruokasieneksi.",
+    "Clue 48": "Maitoa erittävä sieni, jonka lakki on usein limainen ja ruskea.",
+    "Clue 49": "Pitkävartinen suppilomainen sieni, joka kasvaa syksyisin sammaleisilla alueilla.",
+    "Clue 50": "Vaalea, piikikäs sieni, joka kasvaa havumetsissä ja on ruokasienenä arvostettu.",
+
+    "Clue 51": "Pensasmainen kasvi, jonka marjoja käytetään usein hilloihin ja mehuihin.",
+    "Clue 52": "Kosteikoilla ja soilla kasvava happamanmakuinen punainen marja.",
+    "Clue 53": "Tummanvioletti marja, joka kasvaa metsien reunoilla ja soilla.",
+    "Clue 54": "Kultaisen oranssi marja, joka on arvostettu Lapin tunturien soilla.",
+    "Clue 55": "Kesän suosikki, makea ja punainen marja, joka kasvaa monilla pihoilla.",
+    "Clue 56": "Metsän sininen marja, joka on tunnettu terveydellisistä eduistaan.",
+    "Clue 57": "Punainen ja hapan marja, jota käytetään monissa suomalaisissa ruokalajeissa.",
+    "Clue 58": "Hapokas, oranssi marja, joka kasvaa pensaissa lähellä rannikoita.",
+    "Clue 59": "Pehmeä ja makea punainen marja, jota nautitaan tuoreena ja hilloissa.",
+    "Clue 60": "Tummanvioletti tai musta marja, joka kasvaa matalissa varvuissa tunturimetsissä."
+};
+
+
+
+
+

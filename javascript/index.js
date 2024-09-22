@@ -1,3 +1,16 @@
+let currentMode = "easy";
+function setEasyMode() {
+    currentMode = 'easy';
+    localStorage.setItem('currentMode', currentMode);
+}
+
+function setHardMode() {
+    currentMode = 'hard';
+    localStorage.setItem('currentMode', currentMode);
+}
+
+
+
 function startGame() {
     document.getElementById('startButton').style.display = 'none';
     document.querySelector('.menu').style.display = 'block';
@@ -10,36 +23,30 @@ function startGame() {
       buttons.style.display = "none";
     }
   }
-  function showInstructions(url) {
-    const modal = document.getElementById('instructionsModal');
-    modal.style.display = 'flex';
 
-    const startGameButton = document.getElementById('startGameButton');
-    startGameButton.onclick = function() {
-      window.location.href = url;
-    };
-}
-
-
-  function openModal(imageSrc, difficultyUrl) {
+  function openModal(imageSrc, difficultyUrl, category) {
     const modal = document.getElementById('imageModal');
     const modalContent = document.getElementById('modalContent');
-    
+    const modalCategory = document.getElementById('modalCategory');
+
     modal.style.display = 'flex';
     modalContent.style.backgroundImage = `url(${imageSrc})`;
+    modalCategory.textContent = category; // Set the category text
 
     const easyButton = document.getElementById('easyButton');
     const hardButton = document.getElementById('hardButton');
 
     easyButton.onclick = function() {
-      closeModal();
-      showInstructions(difficultyUrl); 
-  };
+        window.location.href = difficultyUrl;
+        setEasyMode(); 
+    };
 
     hardButton.onclick = function() {
-        window.location.href = difficultyUrl; 
+        window.location.href = difficultyUrl;
+        setHardMode(); 
     };
 }
+
 
   function closeModal() {
   document.getElementById('imageModal').style.display = 'none';

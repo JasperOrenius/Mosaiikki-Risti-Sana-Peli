@@ -78,6 +78,7 @@
   background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
+  font-size: 200%;
 }
 
 .modal-content {
@@ -156,7 +157,8 @@
   }
 
 .category {
-    display: none; 
+    display: none;
+    font-size: larger;
   }
   
   .category.show {
