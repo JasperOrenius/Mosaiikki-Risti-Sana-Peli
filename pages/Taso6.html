@@ -8,8 +8,10 @@
 </head>
 <body>
     <div id="game">
-        <a href="../index.html"><button id="exit-button">X</button></a>
-        <button id="help-button" onclick="toggleTutorialScreen()">?</button>
+        <div id="navigation-buttons" style="display: none;">
+            <a href="../index.html"><button id="exit-button">X</button></a>
+            <button id="help-button" onclick="toggleTutorialScreen()">?</button>
+        </div>
         <div id="tutorial-screen">
             <a href="../index.html"><button id="exit-button">X</button></a>
             <button id="help-button" onclick="toggleTutorialScreen()">?</button>
@@ -18,7 +20,7 @@
         </div>
         <div id="game-container" style="display: none;">
         </div>
-        <div id="clues-container">
+        <div id="clues-container" style="display: none;">
             <div class="clue-item">
                 <span class="clue-number">1</span>
                 <img src="../images/Marjat/Herukka.png" class="clue-image" alt="Clue 51">
@@ -60,7 +62,7 @@
                 <img src="../images/Marjat/Variksenmarja.png" class="clue-image" alt="Clue 60">
             </div>
         </div>
-        <div id="alphabet-container">
+        <div id="alphabet-container" style="display: none;">
             <button class="alphabet">A</button>
             <button class="alphabet">B</button>
             <button class="alphabet">C</button>
