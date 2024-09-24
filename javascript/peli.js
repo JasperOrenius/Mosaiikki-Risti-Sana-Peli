@@ -94,8 +94,8 @@ const level6 = [
 ];
 
 let isTutorialScreenVisible = true;
-
 let currentLevel = null;
+let selectedCharacter = '';
 
 function setCurrentLevel(level) {
     currentLevel = level;
@@ -188,6 +188,7 @@ function scaleGrid() {
     table.style.transformOrigin = 'top left';
 }
 
+// Event listener for alphabet buttons
 document.querySelectorAll('.alphabet').forEach(button => {
     button.addEventListener('click', () => {
         document.querySelectorAll('.alphabet').forEach(btn => btn.classList.remove('selected-character'));
@@ -197,6 +198,7 @@ document.querySelectorAll('.alphabet').forEach(button => {
     });
 });
 
+// Event listener for cell clicks
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('cell') && selectedCharacter) {
         const cell = event.target;
@@ -220,10 +222,40 @@ document.addEventListener('click', (event) => {
             }, 1000);
         }
     }
+    
     const score = calculateScore();
     console.log(`Current Score: ${score}`);
 });
 
+// Check Answers Button Logic
+document.getElementById('check-answers-button').addEventListener('click', checkAnswers);
+
+function checkAnswers() {
+    const inputs = document.querySelectorAll('input.cell');
+    let totalLetters = 0;
+    let correctLetters = 0;
+
+    inputs.forEach(input => {
+        const answer = input.dataset.answer; // Get the correct answer
+        if (answer) {
+            totalLetters++; // Count total letters with answers
+            if (input.value.toUpperCase() === answer.toUpperCase()) {
+                correctLetters++; // Count correct answers
+            }
+        }
+    });
+
+    // Provide feedback based on correctness
+    if (correctLetters === totalLetters && totalLetters > 0) {
+        window.location.href = 'loppunäyttö.html';
+    } else if (totalLetters > 0) {
+        alert("Some answers are incorrect. Please try again.");
+    } else {
+        alert("No answers to check.");
+    }
+}
+
+// Toggle tutorial screen
 function toggleTutorialScreen() {
     const tutorialScreen = document.getElementById('tutorial-screen');
     const gameContainer = document.getElementById('game-container');
@@ -232,10 +264,10 @@ function toggleTutorialScreen() {
     gameContainer.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
 }
 
-currentMode = localStorage.getItem('currentMode');
+const currentMode = localStorage.getItem('currentMode');
+console.log(currentMode);
 
-console.log(currentMode)
-
+// Animal Info Hover Logic (if applicable)
 const clueImages = document.querySelectorAll('.clue-image');
 clueImages.forEach(image => {
     image.addEventListener('mouseenter', (event) => {
@@ -243,8 +275,6 @@ clueImages.forEach(image => {
             const animalName = event.target.alt; 
             const info = animalInfo[animalName] || "Ei tietoa.";
             showAnimalInfo(info, event);
-            if (currentMode === 'easy'){
-            } 
         }
     });
 
@@ -253,7 +283,6 @@ clueImages.forEach(image => {
         infoBox.style.display = 'none'; 
     });
 });
-
 
 function showAnimalInfo(info, event) {
     const infoBox = document.getElementById('info-box');

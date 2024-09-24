@@ -208,3 +208,22 @@ input[type="text"] {
     max-width: 200px;
     word-wrap: break-word;
 }
+#check-answers-button {
+    z-index: 1;
+    position: absolute; /* Position it absolutely within the game container */
+    top: 5px; /* Adjust as needed */
+    right: 5px; /* Adjust as needed */
+    height: 40px; /* Button height */
+    width: 120px; /* Button width */
+    border-radius: 5px; /* Rounded corners */
+    border: 2px solid #333; /* Border color */
+    font-family: Arial, sans-serif; /* Font style */
+    background-color: #4CAF50; /* Background color */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#check-answers-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
