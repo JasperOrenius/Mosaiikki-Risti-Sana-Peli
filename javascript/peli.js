@@ -188,7 +188,6 @@ function scaleGrid() {
     table.style.transformOrigin = 'top left';
 }
 
-// Event listener for alphabet buttons
 document.querySelectorAll('.alphabet').forEach(button => {
     button.addEventListener('click', () => {
         document.querySelectorAll('.alphabet').forEach(btn => btn.classList.remove('selected-character'));
@@ -198,7 +197,6 @@ document.querySelectorAll('.alphabet').forEach(button => {
     });
 });
 
-// Event listener for cell clicks
 document.addEventListener('click', (event) => {
     if (event.target.classList.contains('cell') && selectedCharacter) {
         const cell = event.target;
@@ -227,7 +225,6 @@ document.addEventListener('click', (event) => {
     console.log(`Current Score: ${score}`);
 });
 
-// Check Answers Button Logic
 document.getElementById('check-answers-button').addEventListener('click', checkAnswers);
 
 function checkAnswers() {
@@ -236,16 +233,15 @@ function checkAnswers() {
     let correctLetters = 0;
 
     inputs.forEach(input => {
-        const answer = input.dataset.answer; // Get the correct answer
+        const answer = input.dataset.answer;
         if (answer) {
-            totalLetters++; // Count total letters with answers
+            totalLetters++;
             if (input.value.toUpperCase() === answer.toUpperCase()) {
-                correctLetters++; // Count correct answers
+                correctLetters++; 
             }
         }
     });
 
-    // Provide feedback based on correctness
     if (correctLetters === totalLetters && totalLetters > 0) {
         window.location.href = 'loppunäyttö.html';
     } else if (totalLetters > 0) {
@@ -255,7 +251,6 @@ function checkAnswers() {
     }
 }
 
-// Toggle tutorial screen
 function toggleTutorialScreen() {
     const tutorialScreen = document.getElementById('tutorial-screen');
     const gameContainer = document.getElementById('game-container');
@@ -273,7 +268,6 @@ function toggleTutorialScreen() {
 const currentMode = localStorage.getItem('currentMode');
 console.log(currentMode);
 
-// Animal Info Hover Logic (if applicable)
 const clueImages = document.querySelectorAll('.clue-image');
 clueImages.forEach(image => {
     image.addEventListener('mouseenter', (event) => {

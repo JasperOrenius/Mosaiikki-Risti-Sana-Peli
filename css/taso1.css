@@ -210,20 +210,20 @@ input[type="text"] {
 }
 #check-answers-button {
     z-index: 1;
-    position: absolute; /* Position it absolutely within the game container */
-    top: 5px; /* Adjust as needed */
-    right: 5px; /* Adjust as needed */
-    height: 40px; /* Button height */
-    width: 120px; /* Button width */
-    border-radius: 5px; /* Rounded corners */
-    border: 2px solid #333; /* Border color */
-    font-family: Arial, sans-serif; /* Font style */
-    background-color: #4CAF50; /* Background color */
-    color: rgb(0, 0, 0); /* Text color */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
+    position: absolute; 
+    top: 5px; 
+    right: 5px; 
+    height: 40px; 
+    width: 120px; 
+    border-radius: 5px; 
+    border: 2px solid #333; 
+    font-family: Arial, sans-serif; 
+    background-color: #4CAF50; 
+    color: rgb(0, 0, 0);
+    font-size: 16px; 
+    cursor: pointer; 
 }
 
 #check-answers-button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049;
 }
