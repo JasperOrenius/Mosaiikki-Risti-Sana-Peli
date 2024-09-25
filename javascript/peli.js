@@ -259,9 +259,15 @@ function checkAnswers() {
 function toggleTutorialScreen() {
     const tutorialScreen = document.getElementById('tutorial-screen');
     const gameContainer = document.getElementById('game-container');
+    const cluesContainer = document.getElementById('clues-container');
+    const alphabetContainer = document.getElementById('alphabet-container');
+    const navigationButtons = document.getElementById('navigation-buttons');
     isTutorialScreenVisible = !isTutorialScreenVisible;
     tutorialScreen.style.display = isTutorialScreenVisible ? 'block' : 'none';
     gameContainer.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
+    cluesContainer.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
+    alphabetContainer.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
+    navigationButtons.style.display = !isTutorialScreenVisible ? 'flex' : 'none';
 }
 
 const currentMode = localStorage.getItem('currentMode');
