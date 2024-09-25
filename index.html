@@ -34,7 +34,7 @@
       </div>
       <div class="menu-item">
         <div class="category">Sienet</div>
-        <img src="images/Sienet/Herkkutatti.png" alt="herkkutatti" onclick="openModal('images/Sienet/Herkkutatti.png', 'pages/Taso5.html', 'Sienet')">
+        <img src="images/Sienet/Kärpässieni.png" alt="herkkutatti" onclick="openModal('images/Sienet/Kärpässieni.png', 'pages/Taso5.html', 'Sienet')">
       </div>
       <div class="menu-item">
         <div class="category">Marjat</div>
@@ -55,7 +55,15 @@
 </div>
 
 <script src="javascript/index.js"></script>
-
+<script>
+  window.onload = function() {
+      if (localStorage.getItem('hideStartScreen') === 'true') {
+          document.getElementById('startButton').style.display = 'none';
+          document.querySelector('.menu').style.display = 'block';
+          localStorage.removeItem('hideStartScreen'); 
+      }
+  }
+</script>
 </body>
 </html>
 

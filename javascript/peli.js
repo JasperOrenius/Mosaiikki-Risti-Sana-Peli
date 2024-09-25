@@ -360,7 +360,7 @@ const animalInfo = {
     "Clue 60": "Tummanvioletti tai musta marja, joka kasvaa matalissa varvuissa tunturimetsissä."
 };
 
-
-
-
-
+function Menu() {
+    localStorage.setItem('hideStartScreen', 'true');
+    window.location.href = '../index.html';
+}

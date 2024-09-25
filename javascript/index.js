@@ -9,8 +9,6 @@ function setHardMode() {
     localStorage.setItem('currentMode', currentMode);
 }
 
-
-
 function startGame() {
     document.getElementById('startButton').style.display = 'none';
     document.querySelector('.menu').style.display = 'block';
@@ -31,7 +29,7 @@ function startGame() {
 
     modal.style.display = 'flex';
     modalContent.style.backgroundImage = `url(${imageSrc})`;
-    modalCategory.textContent = category; // Set the category text
+    modalCategory.textContent = category; 
 
     const easyButton = document.getElementById('easyButton');
     const hardButton = document.getElementById('hardButton');
