@@ -97,6 +97,9 @@ let isTutorialScreenVisible = true;
 let currentLevel = null;
 let selectedCharacter = '';
 
+const container = document.getElementById('animation-container');
+const images = container.getElementsByTagName('img');
+
 function setCurrentLevel(level) {
     currentLevel = level;
     generateCrosswordGrid(level);
@@ -223,12 +226,35 @@ document.addEventListener('click', (event) => {
     
     const score = calculateScore();
     console.log(`Current Score: ${score}`);
+    checkAnswers();
 });
 
 document.getElementById('check-answers-button').addEventListener('click', checkAnswers);
 
+function leaveUnfinished() {
+    const inputs = document.querySelectorAll('input.cell');
+    const continuePlaying = document.getElementById('continue-playing');
+    
+    let totalLetters = 0;
+    let correctLetters = 0;
+
+    inputs.forEach(input => {
+        const answer = input.dataset.answer;
+        if (answer) {
+            totalLetters++;
+            if (input.value.toUpperCase() === answer.toUpperCase()) {
+                correctLetters++; 
+            }
+        }
+    });
+    
+    continuePlaying.style.display = 'inline';
+    showGameOverScreen();
+}
+
 function checkAnswers() {
     const inputs = document.querySelectorAll('input.cell');
+    const continuePlaying = document.getElementById('continue-playing');
     let totalLetters = 0;
     let correctLetters = 0;
 
@@ -243,11 +269,8 @@ function checkAnswers() {
     });
 
     if (correctLetters === totalLetters && totalLetters > 0) {
-        window.location.href = 'loppunäyttö.html';
-    } else if (totalLetters > 0) {
-        alert("Some answers are incorrect. Please try again.");
-    } else {
-        alert("No answers to check.");
+        continuePlaying.style.display = 'none';
+        showGameOverScreen();
     }
 }
 
@@ -290,6 +313,42 @@ function showAnimalInfo(info, event) {
     infoBox.style.display = 'block';
     infoBox.style.left = `${event.pageX + 10}px`;
     infoBox.style.top = `${event.pageY + 10}px`; 
+}
+
+function triggerAnimation() {
+    const images = document.querySelectorAll('#animation-container img');
+    images.forEach((img, index) => {
+        img.classList.add(`animate${index + 1}`);
+    });
+}
+
+function resetAnimation() {
+    const images = document.querySelectorAll('#animation-container img');
+    images.forEach((img, index) => {
+        img.classList.remove(`animate${index + 1}`);
+        void img.offsetWidth;
+    });
+}
+
+function showGameOverScreen() {
+    triggerAnimation();
+    for (let i = 0; i < images.length; i++) {
+        images[i].classList.add('fadeInAnimation');
+    }
+    const gameOverScreen = document.getElementById('game-over-screen');
+    gameOverScreen.style.display = 'block';
+    gameOverScreen.style.pointerEvents = 'none'; 
+    setTimeout(function() {
+        gameOverScreen.style.pointerEvents = 'all'; 
+    }, 2400);
+    gameOverScreen.classList.add('show');
+}
+
+function hideGameOverScreen() {
+    resetAnimation();
+    const gameOverScreen = document.getElementById('game-over-screen');
+    gameOverScreen.classList.remove('show');
+    gameOverScreen.style.display = 'none';
 }
 
 const animalInfo = {

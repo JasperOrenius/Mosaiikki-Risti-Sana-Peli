@@ -9,14 +9,10 @@
 <body>
     <div class="end-screen-container">
         <h1>Onneksi olkoon!</h1>
-        <p>läpäisit pelin!</p>
-        <button class="button" onclick="restartGame()">Pelaa lisää</button>
+        <p id="score-display"></p>
+        <button class="button" onclick="returnToMenu()">Pelaa lisää</button>
     </div>
 
-    <script>
-        function restartGame() {
-            window.location.href = '../index.html'; 
-        }
-    </script>
+    <script src="../javascript/loppunäyttö.js"></script>
 </body>
 </html>
