@@ -358,7 +358,7 @@ const animalInfo = {
     "Clue 4": "Nopea eläin, jolla on pitkät korvat.",
     "Clue 5": "Suuri nisäkäs, joka tunnetaan voimastaan ja koosta.",
     "Clue 6": "Pieni tai keskikokoinen kaikkiruokainen nisäkäs.",
-    "Clue 7": "Tunnettu padonrakennuskyvyistään.",
+    "Clue 7": "Tunnettu padon rakennus kyvyistään.",
     "Clue 8": "Tunnettu tuuheasta hännästään ja ketteryydestään.",
     "Clue 9": "Kotieläin, joka liittyy usein arktisiin alueisiin.",
     "Clue 10": "Tunnettu laumakäyttäytymisestään ja metsästyskyvyistään.",

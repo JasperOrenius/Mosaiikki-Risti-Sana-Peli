@@ -4,8 +4,6 @@
     height: 650px;
     margin: 50px auto;
     text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    padding: 10px; 
     color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     background-image: url('../images/background.png');
@@ -18,17 +16,33 @@
 }
 
 .start-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
 
-  .start-button button {
-    padding: 20px 40px;
-    font-size: 24px;
-    cursor: pointer;
-  }
+.start-button button {
+  padding: 20px 60px;
+  font-size: 24px;
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.start-button button:hover {
+  background-color: #5A9BD5;
+  transform: translateY(-2px);
+}
+
+.start-button button:active {
+  background-color: #36648B;
+  transform: translateY(2px);
+}
 
 .title {
     font-size: 100px; 
