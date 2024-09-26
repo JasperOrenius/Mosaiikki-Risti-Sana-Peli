@@ -1,11 +1,9 @@
 body {
-    margin: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f8ff; 
-    font-family: Arial, sans-serif; 
+    margin: 0;
 }
 
 .end-screen-container {
@@ -13,16 +11,13 @@ body {
     height: 650px;
     background-image: url('../images/background.png');
     background-size: cover; 
-    background-position: center; 
-    background-color: rgba(255, 255, 255, 0.9); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 10px; 
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
+    justify-content: space-between;
+    position: absolute;
+    top: 5px;
 }
 
 h1 {
@@ -39,7 +34,7 @@ p {
 }
 
 .button {
-    margin-top: 20px; 
+    margin-bottom: 20px; 
     padding: 10px 20px; 
     font-size: 1em; 
     background-color: #3498db; 
@@ -51,4 +46,186 @@ p {
 
 .button:hover {
     background-color: #2980b9; 
+}
+
+#game-over-screen {
+    opacity: 0;
+    position: absolute;
+    width: 700px;
+    height: 650px;
+    top: 5px;
+    text-align: center;
+    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: opacity 1s ease;
+}
+#game-over-screen.show {
+    opacity: 1;
+}
+#game-over-screen img[alt="red_ribon"] {
+    width: 700px;
+    height: 230px;
+    margin-top: 160px;
+    pointer-events: none;
+}
+#animation-container {
+    z-index: 3;
+    position: absolute;
+    width: 650px;
+    height: 700px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+#animation-container img {
+    overflow-y: auto;
+    position: relative;
+    opacity: 0;
+}
+@keyframes fadeIn1 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(35px, -65px);
+    }
+}
+@keyframes fadeIn2 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(20px, -80px);
+    }
+}
+@keyframes fadeIn3 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(15px, -95px);
+    }
+}
+@keyframes fadeIn4 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(10px, -100px);
+    }
+}
+@keyframes fadeIn5 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(5px, -105px);
+    }
+}
+@keyframes fadeIn6 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(40px, -105px);
+    }
+}
+@keyframes fadeIn7 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(30px, -100px);
+    }
+}
+@keyframes fadeIn8 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(25px, -95px);
+    }
+}
+@keyframes fadeIn9 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(20px, -85px);
+    }
+}
+@keyframes fadeIn10 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(15px, -75px);
+    }
+}
+@keyframes fadeIn11 {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-10px, -65px);
+    }
+}
+.animate1 {
+    animation: fadeIn1 1s ease 0.2s forwards;
+}
+.animate2 {
+    animation: fadeIn2 1s ease 0.4s forwards;
+}
+.animate3 {
+    animation: fadeIn3 1s ease 0.6s forwards;
+}
+.animate4 {
+    animation: fadeIn4 1s ease 0.8s forwards;
+}
+.animate5 {
+    animation: fadeIn5 1s ease 1s forwards;
+}
+.animate6 {
+    animation: fadeIn6 1s ease 1.2s forwards;
+}
+.animate7 {
+    animation: fadeIn7 1s ease 1.4s forwards;
+}
+.animate8 {
+    animation: fadeIn8 1s ease 1.6s forwards;
+}
+.animate9 {
+    animation: fadeIn9 1s ease 1.8s forwards;
+}
+.animate10 {
+    animation: fadeIn10 1s ease 2s forwards;
+}
+.animate11 {
+    animation: fadeIn11 1s ease 2.2s forwards;
 }

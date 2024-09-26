@@ -8,11 +8,28 @@
 </head>
 <body>
     <div class="end-screen-container">
-        <h1>Onneksi olkoon!</h1>
+        <div id="animation-container">
+            <img src="../images/Animaatio/H_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/Y_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/V_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/I_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/N_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/T_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/E_1.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/H_2.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/T_2.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/Y_2.png" style="width: 50px; height: 50px;">
+            <img src="../images/Animaatio/!_1.png" style="width: 50px; height: 50px;">
+        </div>
         <p id="score-display"></p>
         <button class="button" onclick="returnToMenu()">Pelaa lisää</button>
     </div>
-
+    <div id="game-over-screen">
+        <img src="../images/Animaatio/ribon.png" alt="red_ribon">
+    </div>
     <script src="../javascript/loppunäyttö.js"></script>
+    <script>
+        triggerAnimation();
+    </script>
 </body>
 </html>

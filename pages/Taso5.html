@@ -8,24 +8,11 @@
 </head>
 <body>
     <div id="game">
-        <div id="animation-container">
-            <img src="../images/Animaatio/H_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/Y_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/V_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/I_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/N_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/T_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/E_1.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/H_2.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/T_2.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/Y_2.png" style="width: 50px; height: 50px;">
-            <img src="../images/Animaatio/!_1.png" style="width: 50px; height: 50px;">
-        </div>
         <div id="navigation-buttons" style="display: none;">
             <a href="../index.html"><button id="exit-button">X</button></a>
             <button id="help-button" onclick="toggleTutorialScreen()">?</button>
             <button id="menu-button" onclick="Menu()">≡</button>
-            <button id="check-answers-button" onclick="leaveUnfinished()">Tarkista Vastaukset</button>
+            <button id="check-answers-button" onclick="leaveUnfinished()">Lopeta Kesken</button>
         </div>
         <div id="tutorial-screen">
             <a href="../index.html"><button id="exit-button">X</button></a>
@@ -110,9 +97,9 @@
     </div>
     <div id="info-box" class="info-box" style="display: none;"></div>
     <div id="game-over-screen">
-        <img src="../images/Animaatio/ribon.png" alt="red_ribon">
+        <p id="continue-text">Haluatko lopettaa pelaamisen?</p>
         <button id="continue-playing" onclick="hideGameOverScreen()">Jatka Pelaamista</button>
-        <a href="../pages/loppunäyttö.html"><button id="next-button">Seuraava</button></a>
+        <button id="next-button" onclick="next()">Seuraava</button>
     </div>
     <script src="../javascript/peli.js"></script>
     <script>
